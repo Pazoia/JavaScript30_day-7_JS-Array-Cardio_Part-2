@@ -26,6 +26,34 @@
         ];
     </script>
 
+    <h1>
+        Original Data: People <br>
+        <script type="text/javascript">
+            var table = document.createElement("table");
+            for (var i = 0; i < people.length; i++) {
+                var row = table.insertRow(-1);
+                var nameCell = row.insertCell(-1);
+                nameCell.appendChild(document.createTextNode(people[i].name));
+                var yearCell = row.insertCell(-1);
+                yearCell.appendChild(document.createTextNode(people[i].year));
+            }
+            document.body.appendChild(table);
+        </script>
+    </h1>
+    <h1>
+        Original Data: Comments <br>
+        <script type="text/javascript">
+            var table = document.createElement("table");
+            for (var i = 0; i < comments.length; i++) {
+                var row = table.insertRow(-1);
+                var idCell = row.insertCell(-1);
+                idCell.appendChild(document.createTextNode(comments[i].id));
+                var textCell = row.insertCell(-1);
+                textCell.appendChild(document.createTextNode(comments[i].text));
+            }
+            document.body.appendChild(table);
+        </script>
+    </h1>
     <script>
         // Some and Every Checks
         // Array.prototype.some() // is at least one person 19 or older?
