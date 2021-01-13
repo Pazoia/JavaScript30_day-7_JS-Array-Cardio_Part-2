@@ -88,10 +88,11 @@
     <h1 class="exercises">
         1 - If at least one person is 19 or older return 'true' else return 'false' using .some method. <br>
         <div class="answers">
-            Answer:
-            <script type="text/javascript">
-                document.write(isAdult)
-            </script>
+            <li>
+                <script type="text/javascript">
+                    document.write(isAdult);
+                </script>
+            </li>
         </div>
     </h1>
     
@@ -111,10 +112,11 @@
     <h1 class="exercises">
         2 - If every person is 19 or older return 'true' else return 'false' using .every method. <br>
         <div class="answers">
-            Answer:
-            <script type="text/javascript">
-                document.write(allAdults)
-            </script>
+            <li>
+                <script type="text/javascript">
+                    document.write(allAdults);
+                </script>
+            </li>
         </div>
     </h1>
     
@@ -123,14 +125,26 @@
         // Array.prototype.find()
         // Find is like filter, but instead returns just the one you are looking for
         // find the comment with the ID of 823423
+
+        // const comment = comments.find(function(comment) {
+        //     if (comment.id === 823423) {
+        //         return true;
+        //     }
+        // });
+
+        const comment = comments.find(comment => comment.id === 823423);
+
+        console.log(comment);
+
     </script>
     <h1 class="exercises">
         3 - Find the comment with the ID of 823423 using .find method. <br>
         <div class="answers">
-            Answer:
-            <script type="text/javascript">
-                
-            </script>
+            <li>
+                <script type="text/javascript">
+                    document.write(comment.text);
+                </script>
+            </li>
         </div>
     </h1>
 
@@ -142,10 +156,11 @@
     <h1 class="exercises">
         4 - Find the comment with the ID of 823423 using .findIndex method. <br>
         <div class="answers">
-            Answer:
-            <script type="text/javascript">
-                
-            </script>
+            <li>
+                <script type="text/javascript">
+                    
+                </script>
+            </li>
         </div>
     </h1>
 
@@ -157,10 +172,11 @@
     <h1 class="exercises">
         5 - Delete the comment with the ID of 823423 using .findIndex method. <br>
         <div class="answers">
-            Answer:
-            <script type="text/javascript">
-                
-            </script>
+            <li>
+                <script type="text/javascript">
+                    
+                </script>
+            </li>
         </div>
     </h1>
     
