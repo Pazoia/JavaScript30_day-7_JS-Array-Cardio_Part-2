@@ -172,18 +172,26 @@
         // Exercise 5
         // Array.prototype.findIndex()
         // delete the comment with the ID of 823423
+        const newIndex = comments.findIndex(comment => comment.id === 823423);
+        comments.splice(newIndex, 1);
+
+        console.table(comments);
+
     </script>
     <h1 class="exercises">
         5 - Delete the comment with the ID of 823423 using .findIndex method. <br>
-        <div class="answers">
-            <li>
-                <script type="text/javascript">
-                    
-                </script>
-            </li>
-        </div>
-    </h1>
-    
+            <script type="text/javascript">
+                var table = document.createElement("table");
+                for (var i = 0; i < comments.length; i++) {
+                    var row = table.insertRow(-1);
+                    var idCell = row.insertCell(-1);
+                    idCell.appendChild(document.createTextNode(comments[i].id));
+                    var textCell = row.insertCell(-1);
+                    textCell.appendChild(document.createTextNode(comments[i].text));
+                }
+                document.body.appendChild(table);
+            </script>
+    </h1>   
 
 </body>
 </html>
