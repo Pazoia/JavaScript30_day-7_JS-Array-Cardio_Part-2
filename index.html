@@ -152,13 +152,17 @@
         // Exercise 4
         // Array.prototype.findIndex()
         // Find the comment with this ID
+        const index = comments.findIndex(comment => comment.id === 823423);
+        commentByIndex = comments[index]
+        console.log(commentByIndex)
+
     </script>
     <h1 class="exercises">
         4 - Find the comment with the ID of 823423 using .findIndex method. <br>
         <div class="answers">
             <li>
                 <script type="text/javascript">
-                    
+                    document.write(commentByIndex.text);
                 </script>
             </li>
         </div>
